@@ -13,3 +13,10 @@ buildNumber.properties
 
 #ignore IntelliJ
 .idea
+
+#ignore local backups of fitnesse
+20*.zip
+20*.xml
+
+#ignore files in lib directory because it was added by maven build or the startFitnesse script.
+fitnesse/lib/*.jar

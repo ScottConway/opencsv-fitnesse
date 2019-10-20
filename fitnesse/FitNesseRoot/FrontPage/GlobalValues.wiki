@@ -1,0 +1,11 @@
+---
+Help: global properties used by all tests
+Suites: global, path
+---
+!path lib/*.jar
+!contents -R2 -g -p -f -h
+Values for a CSVParser 
+
+|separator |character used to denote the end of one piece of data and the start of another                                                   |
+|quote     |character used to group data together in one field - necessary if the field contains a newline or separator character            |
+|escpae    |character used to denote that the next character is a separator, quote, or escape character but needs to be considered field data|
