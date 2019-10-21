@@ -9,6 +9,6 @@ Test
 !2 Simple Data all in one line
 
 
-!|CsvParserSetupFixture|                                                                                |
+!|CsvParserSetupFixture|
 |separator|quote|escape|strict quotes|ignore leading white space|ignore quotations|null field indicator|
 |,        |"    |\     |false        |true                      |false            |NEITHER             |
