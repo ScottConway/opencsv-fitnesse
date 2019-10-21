@@ -13,6 +13,7 @@ buildNumber.properties
 
 #ignore IntelliJ
 .idea
+*.iml
 
 #ignore local backups of fitnesse
 20*.zip
@@ -20,3 +21,17 @@ buildNumber.properties
 
 #ignore files in lib directory because it was added by maven build or the startFitnesse script.
 fitnesse/lib/*.jar
+
+#additional ignore for fitnesse taken from https://github.com/unclebob/fitnesse/blob/master/.gitignore
+fitserverSentinel*
+testHistoryDirectory/
+tmp/*
+FitNesseRoot/properties
+FitNesseRoot/ErrorLogs/*
+FitNesseRoot/files/testResults/*
+FitNesseRoot/RecentChanges*
+FitNesseRoot/RerunLastFailures.wiki
+junit*.properties
+FitNesseRoot/updateDoNotCopyOverList
+FitNesseRoot/updateList
+fitMutation/

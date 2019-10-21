@@ -2,7 +2,7 @@
 Help: global properties used by all tests
 Suites: global, path
 ---
-!path lib/*.jar
+!path ./lib/*.jar
 !contents -R2 -g -p -f -h
 Values for a CSVParser 
 

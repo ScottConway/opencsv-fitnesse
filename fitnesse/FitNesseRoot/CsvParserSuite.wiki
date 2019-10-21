@@ -2,5 +2,6 @@
 Help: Suite of tests for the csv parser
 Suites: parser, csvparser, opencsv
 ---
-!contents -R2 -g -p -f -h
 !include FrontPage.GlobalValues
+!contents -R2 -g -p -f -h
+

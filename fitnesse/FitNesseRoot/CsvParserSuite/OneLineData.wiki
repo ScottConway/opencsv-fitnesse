@@ -3,10 +3,12 @@ Help: Simple Data that is all in a single line
 Suites: csvparser
 Test
 ---
-<test page>
+!|Import|
+|com.opencsv.fitnesse|
 
 !2 Simple Data all in one line
 
-!|CsvParserSetupFixture                                                                                |
+
+!|CsvParserSetupFixture|                                                                                |
 |separator|quote|escape|strict quotes|ignore leading white space|ignore quotations|null field indicator|
 |,        |"    |\     |false        |true                      |false            |NEITHER             |
