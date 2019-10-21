@@ -12,24 +12,24 @@ public class CsvParserSetupFixture extends SetUpFixture {
     public CsvParserSetupFixture() {
     }
 
-    public void separatorQuoteEscapeStrictQuotesIgnoreLeadingWhiteSpaceIgnoreQuotationsNullFieldIndicator(
-        char separator,
-        char quote, char escape,
-        boolean strictQuotes,
-        boolean ignoreLeadingWhiteSpace,
-        boolean ignoreQuotations,
-        String nullFieldIndicator) {
-        System.out.println("Hello world");
-        CSVParserBuilder builder = new CSVParserBuilder()
-            .withSeparator(separator)
-            .withQuoteChar(quote)
-            .withEscapeChar(escape)
-            .withStrictQuotes(strictQuotes)
-            .withIgnoreLeadingWhiteSpace(ignoreLeadingWhiteSpace)
-            .withIgnoreQuotations(ignoreQuotations)
-            .withFieldAsNull(determineNullFieldIndicator(nullFieldIndicator));
-        parser = builder.build();
-    }
+//    public void separatorQuoteEscapeStrictQuotesIgnoreLeadingWhiteSpaceIgnoreQuotationsNullFieldIndicator(
+//        char separator,
+//        char quote, char escape,
+//        boolean strictQuotes,
+//        boolean ignoreLeadingWhiteSpace,
+//        boolean ignoreQuotations,
+//        String nullFieldIndicator) {
+//        System.out.println("Hello world");
+//        CSVParserBuilder builder = new CSVParserBuilder()
+//            .withSeparator(separator)
+//            .withQuoteChar(quote)
+//            .withEscapeChar(escape)
+//            .withStrictQuotes(strictQuotes)
+//            .withIgnoreLeadingWhiteSpace(ignoreLeadingWhiteSpace)
+//            .withIgnoreQuotations(ignoreQuotations)
+//            .withFieldAsNull(determineNullFieldIndicator(nullFieldIndicator));
+//        parser = builder.build();
+//    }
 
     public void separatorQuoteEscapeStrictQuotesIgnoreLeadingWhiteSpaceIgnoreQuotations(
         char separator,

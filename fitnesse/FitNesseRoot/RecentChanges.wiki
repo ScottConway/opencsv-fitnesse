@@ -1,3 +1,4 @@
+|CsvParserSuite.StrictQuotesIgnoreWhiteSpaceDoNotIgnoreQuotations||14:58:26 Mon, Oct 21, 2019|
 |FrontPage.GlobalValues||13:38:25 Mon, Oct 21, 2019|
 |CsvParserSuite||13:38:16 Mon, Oct 21, 2019|
 |CsvParserSuite.OneLineData||13:37:52 Mon, Oct 21, 2019|

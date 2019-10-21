@@ -19,6 +19,6 @@ Test
 |a,b,c,d|4|[a, b, c, d]|
 |a,   "fields with quotes have spaces before quotes trimmed",c|3|[a, fields with quotes have spaces before quotes trimmed, c]|
 |a, "field with quotes \\ and escape character",c|3|[a, field with quotes \ and escape character, c]|
-|a, "field with quotes and
-new line",c|3|[a, field with quotes and
-new line, c]|
+|!- a,  "field with quotes and
+new line",c -!|3|!- [a, field with quotes and
+new line, c] -!|

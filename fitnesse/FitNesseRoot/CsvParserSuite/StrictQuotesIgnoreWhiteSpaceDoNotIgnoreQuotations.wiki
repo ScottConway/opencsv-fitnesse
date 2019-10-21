@@ -1,0 +1,26 @@
+---
+Help: Strict quotes is set to true, ignore leading white space is set to true, ignore quotations is set to false
+Test
+---
+!|Import|
+|com.opencsv.fitnesse|
+
+!2 Strict Quotes, ignore leading white space, do not ignore quotes
+
+With strict quotes all data is required to be in quotes or else it is an empty string!
+
+
+!|CsvParserSetupFixture|
+|separator|quote|escape|strict quotes|ignore leading white space|ignore quotations|
+|,        |"    |\     |true        |true                      |false            |
+
+!|CsvParserTester|
+|data|number of fields?|parsed fields?|
+|a,b,c|3|[, , ]|
+|a,b,c,d|4|[, , , ]|
+|a,   "fields with quotes have spaces before quotes trimmed",c|3|[, fields with quotes have spaces before quotes trimmed, ]|
+|a, "field with quotes \\ and escape character",c|3|[, field with quotes \ and escape character, ]|
+|!- a,  "field with quotes and
+new line",c -!|3|!- [, field with quotes and
+new line, ] -!|
+|"a", "b", "c"|3|[a, b, c]|
