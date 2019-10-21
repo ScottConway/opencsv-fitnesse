@@ -10,5 +10,15 @@ Test
 
 
 !|CsvParserSetupFixture|
-|separator|quote|escape|strict quotes|ignore leading white space|ignore quotations|null field indicator|
-|,        |"    |\     |false        |true                      |false            |NEITHER             |
+|separator|quote|escape|strict quotes|ignore leading white space|ignore quotations|
+|,        |"    |\     |false        |true                      |false            |
+
+!|CsvParserTester|
+|data|number of fields?|parsed fields?|
+|a,b,c|3|[a, b, c]|
+|a,b,c,d|4|[a, b, c, d]|
+|a,   "fields with quotes have spaces before quotes trimmed",c|3|[a, fields with quotes have spaces before quotes trimmed, c]|
+|a, "field with quotes \\ and escape character",c|3|[a, field with quotes \ and escape character, c]|
+|a, "field with quotes and
+new line",c|3|[a, field with quotes and
+new line, c]|
